@@ -1,4 +1,4 @@
-let tomorrow = new Date("Aug 24, 2023 9:30:00").getTime();
+let tomorrow = new Date("Aug 24, 2023 19:30:00").getTime();
 
 let countdown = setInterval(function(){
     let now = new Date().getTime();
@@ -17,7 +17,7 @@ let countdown = setInterval(function(){
     console.log(hours);
     console.log(minutes);
     console.log(seconds);
-    if (distance < 0) {
+    if (distance <= 0) {
         clearInterval(countdown);
       }
     }, 1000);
